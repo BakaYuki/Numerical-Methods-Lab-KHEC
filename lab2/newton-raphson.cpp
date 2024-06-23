@@ -2,19 +2,22 @@
 #include <math.h>
 
 double funct(double x){
-    return (cos(x)+1)/3 ;
+    return x*x - 4 * x - 10;
+}
+
+double dfunct(double x){
+    return 2 * x - 4;
 }
 
 int main(){
-    double x0 = 5; // initial guess 
-    double e = 0.001;
+    double x0 = 9; // initial guess
+    double e = 0.0001;
     double x1;
     int count = 1;
     here:
-    x1 = funct(x0);
-
-    if ( fabs(x1 - x0 )<e){
-        printf("The root is %.6f found at iteration %d\n", x1, count);
+    x1 = x0 - funct(x0) / dfunct(x0);
+    if( funct(x1)<e){
+        printf("The root is: %lf\n", x1);
     }
     else{
         printf("Iteration %d: x0 = %lf, x1 = %lf\n", count++, x0, x1);
