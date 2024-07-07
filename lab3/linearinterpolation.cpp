@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    int n;
+    int n = 5;
     cout << "Enter the maximum number of elements: ";
     cin>>n;
     float x[n], y[n];
@@ -11,6 +11,8 @@ int main(){
         cout << "Enter the x and y coordinate of the point " << i + 1 << ": ";
         cin >> x[i] >> y[i];
     }
+    // float x[] = {1.0, 2.0, 3.0, 4.0, 5.0};
+    // float y[] = {1.0, 1.4142, 1.7321, 2, 2.2361};
     cout<<"Enter the x-coordinate for interpolation: ";
     float xi;
     cin>> xi;
