@@ -10,6 +10,7 @@ int main(){
     double e = 0.001;
     double x1;
     int count = 1;
+    printf("Steps\tx0\t\tx1\n");
     here:
     x1 = funct(x0);
 
@@ -17,7 +18,7 @@ int main(){
         printf("The root is %.6f found at iteration %d\n", x1, count);
     }
     else{
-        printf("Iteration %d: x0 = %lf, x1 = %lf\n", count++, x0, x1);
+        printf("%d\t%lf\t%lf\n", count++, x0, x1);
         x0 = x1;
         goto here;
     }

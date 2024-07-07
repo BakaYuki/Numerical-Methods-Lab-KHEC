@@ -13,7 +13,7 @@ int main(){
         printf("You have not assumed the right initial points.\n");
         return -1;
     }
-    printf("Iteration\tx1\t\tx2\t\tx0\n");
+    printf("Steps\t\tx1\t\tx2\t\tx0\n");
     here:
     fx1 = f(x1);
     fx2 = f(x2);
