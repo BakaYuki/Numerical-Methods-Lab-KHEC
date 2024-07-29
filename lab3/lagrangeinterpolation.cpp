@@ -16,7 +16,7 @@ int main()
     // n = 5;
     // float x[] = {1.0, 2.0, 3.0, 4.0, 5.0};
     // float y[] = {1.0, 1.4142, 1.7321, 2, 2.2361};
-    float temp[n];
+    //float temp[n];
 
     cout << "Enter the x-coordinate for interpolation: ";
     float xi;
